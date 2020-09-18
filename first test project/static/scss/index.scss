@@ -1,0 +1,36 @@
+*{
+    font-family:  'Arvo', serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.height{
+    min-height: 100vh;  // %概念
+}
+
+.title-underline{
+    width: 100px;
+    height: 10px;
+    margin: 0 auto;
+    background: blue !important;
+}
+.height-80{
+    min-height: 80vh;
+}
+
+.about-picture{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  // 照片固定不隨卷軸移動。
+}
+.team-card{
+    width: 19rem;
+    height: 28rem;
+}
+#filter{
+    background: 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  // 照片固定不隨卷軸移動。
+}
