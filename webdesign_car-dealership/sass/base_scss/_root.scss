@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap');
+
+
+$mainBlue:#40ACF1;
+$mainDarkBlue:#1477b5;
+$transparentBlue:rgba(64, 172, 241,0.7);
+$mainWhite:#FFFFFF;
+$mainBlack:#292F36;
+$mainGrey:rgb(216, 214, 214);
+$mainYellow:#e3b505;
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: $mainBlack;
+  background: $mainWhite;
+}
+
+.text-Noto {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 400;
+}
+
+
+/* skill*/
+.section-title-special{
+  background: $mainBlue;
+  color: $mainWhite;
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+
+/* preloader */
+.preloader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $mainWhite;
+  z-index: 999;
+}
+.hidePreloader{
+  display: none !important;
+}

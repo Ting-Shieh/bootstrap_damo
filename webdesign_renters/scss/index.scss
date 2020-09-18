@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+
+$mainDark: #242325;
+$mainGreen: #61e786;
+$mainWhite: #fff;
+$mainGrey: #eeeeee;
+
+@mixin box($w,$h,$r) {
+    width: $w;
+    height: $h;
+    border-radius: $r;
+}
+@mixin set_center(){
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin set_bottom_center(){
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+@mixin set_bottom_center_moving($transy){
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,$transy);
+}
+
+*{
+    //border: solid 1px black;
+}
+
+/* ===== global =====*/
+.text-green{
+    color: $mainGreen;
+}
+.text-slant{
+    font-family: "Caveat", cursive;
+}
+.green__btn {
+    color: $mainGreen;
+    border: 0.1rem solid $mainGreen;
+}
+.green__btn:hover {
+    background: $mainGreen;
+    color: $mainWhite;
+}
+
+.title-underline{
+    @include box(20rem, 0.3rem, 2rem);
+    margin: 0 auto;
+    position: relative;  
+    .title-underline__center{
+        position: absolute;
+        @include box(50%, 0.6rem, 1rem);
+        background: $mainGreen;
+        @include set_center();
+    }
+}
+
+.img-container{
+
+    position: relative;
+    .featured-icons{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        .featured-icons-left{
+            background: $mainDark;
+            padding: 0.5rem;
+            display: inline-block;
+            color: $mainWhite;
+        }
+        .featured-icons-right{
+            background: $mainGreen;
+            padding: 0.5rem;
+            display: inline-block;
+            color: $mainWhite;
+        }
+    }
+}
+/*===== end of global =====*/
+body {
+    font-family: "Mali", cursive;
+    background: $mainWhite;
+    color: $mainDark;
+    background: transparent;
+  }
+
+
+/*===== navbar =====*/
+#home{
+    .navbar{
+        background: $mainDark !important;
+    }
+    .phone-icon{
+        color: $mainGreen;
+        border: 0.1rem solid $mainGreen;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+    // banner
+    .container-fluid{
+        .banner-info{
+            min-height: calc(100vh - 101px); //全屏的navbar height px
+            background: $mainGrey;
+            position: relative;
+            .banner-info__footer{
+                background: $mainGreen;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+
+        }
+        .banner-img{
+            min-height: calc(100vh - 101px); //全屏的navbar height px
+            background:url("../img/bannerBcg.jpeg")center/cover fixed no-repeat ;  //position/size attachment repeat 
+            position: relative;
+            .banner-img__footer{
+                background: $mainDark;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 104px; //.banner-info__footer height same
+                // 用 css 方式，達到 d-flex align-items-center
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+/*===== end of navbar =====*/
+
+
+/*===== about =====*/
+#about{
+    .about_img{
+        
+    }
+
+    .about_info{
+        
+        .blockquote{
+            border-left: 0.5rem solid $mainGreen;
+            
+        }
+    }
+
+
+    
+}
+/*===== end of about =====*/
+
+/*===== featured =====*/
+#featured{
+    background: $mainGrey;
+}
+/*===== end of featured =====*/
+/*===== contact =====*/
+#contact{
+    background: $mainGreen;
+    color: $mainWhite;
+    .form-inline{
+        .contact-btn{
+            background: transparent;
+            border: 0.1rem solid $mainWhite;
+            color: $mainWhite;
+        }
+        .contact-btn:hover{
+            background: $mainWhite;
+
+            color: $mainGreen;
+        }
+
+    }
+}
+/*===== end of contact =====*/
+/*===== services =====*/
+#services{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../img/bannerBcg.jpeg")center/cover fixed no-repeat ; 
+    .services_info{
+        .service-icon{
+            font-size: 2rem;
+            color: $mainGreen;
+            padding: 0.5rem;
+            border: 0.1rem solid $mainGreen;
+            margin-right: 1rem;
+            transition: all 1s ease-in-out;
+        }
+        .service-icon:hover{
+            background: $mainGreen;
+            color: $mainGrey;
+        }
+
+        .service-link:hover{
+            color: $mainWhite;
+            text-decoration: none;
+        }
+    }
+
+    .services_photo{
+        .img-container{
+            position: relative;
+            .services_info_text{
+                color: $mainWhite !important;
+                position: absolute;
+                @include set_bottom_center();
+                background: $mainGreen;
+                margin-bottom: 0;
+                text-decoration: none;
+            }
+            .services_info_text:hover{
+                color: $mainDark !important;
+                text-decoration: none;
+            }
+        }
+    }
+        
+
+}
+/*===== end of services =====*/
+/*===== gallery =====*/
+#gallery{
+
+    .gallery_bottom_row{
+        .gallery-btn:hover{
+            background: $mainGreen;
+            color: $mainWhite;
+        }
+    }
+    .gallery_photo_row{
+        .gallery-img-container{
+            position: relative;
+            transition: all 1s linear; 
+            overflow: hidden;
+            .gallery_img{
+                transition: all 1s linear; 
+            }     
+            .gallery_info{
+                position: absolute;
+                @include set_bottom_center_moving(100%);
+                background: $mainGreen;
+                transition: all 0.3s linear; 
+                
+            }
+            .gallery_icon{
+                color: $mainWhite;
+                position: absolute;
+                @include set_center();
+                font-size: 2rem;
+                opacity: 0;
+                transition: all 0.3s linear; 
+                cursor: pointer;
+            }
+        }
+        .gallery-img-container:hover{
+            background: rgba(0,0,0,0.9);
+            .gallery_img{
+                opacity: 0.3;
+            }
+            .gallery_info{
+                text-decoration: none;
+                transform: translate(-50%,0);
+                color: $mainDark;
+                
+            }
+            .gallery_info:hover{
+                color: $mainDark;
+                text-decoration: none;
+            }
+            .gallery_icon{
+                opacity: 1;
+            }
+        }
+    }
+    
+}
+/*===== end of gallery =====*/
+
+/*===== tour =====*/
+#tour{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../img/bannerBcg.jpeg")center/cover fixed no-repeat ; 
+    .tour-icon{
+        color: $mainGreen;
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        background: $mainWhite;
+        border-radius: 30%;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.5s linear;
+    }
+    .tour-icon:hover{
+        color: $mainWhite;
+        background: $mainGreen;
+    }
+}
+/*===== end of tour =====*/
+
+#footer{
+    background: $mainDark;
+}

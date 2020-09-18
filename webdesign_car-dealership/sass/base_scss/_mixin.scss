@@ -1,0 +1,41 @@
+/*keyframe 必定要這樣先宣告*/
+@mixin keyframes($animationName) {
+    @keyframes #{$animationName} {
+        @content;
+    }
+  }
+
+
+
+@mixin kf_headerMove($ss: 20s) {
+    animation: kf_headerMove $ss infinite;
+    animation-delay: 2s;
+    @include keyframes(kf_headerMove){
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.2) translateX(-5%);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+}
+
+@mixin setBox($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+
+@mixin iconStyle($fs, $c, $bg) {
+    font-size: $fs;
+    color: $c;
+    background: $bg;
+}
+@mixin setCenter(){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
