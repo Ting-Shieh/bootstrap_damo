@@ -1,0 +1,78 @@
+/*keyframe 必定要這樣先宣告*/
+@mixin keyframes($animationName) {
+    @keyframes #{$animationName} {
+        @content;
+    }
+  }
+
+@mixin setbottom_Center(){
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin setmiddle_Center(){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin fromLeft($ss: 4s){
+    animation: fromLeft $ss;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;  //不會再回復成  opacity: 0;
+    @include keyframes(fromLeft) {
+        0%{
+            transform: translateX(-100px); 
+            opacity: 0;
+        }
+        50%{
+            transform: translateX(30px); 
+        }
+        100%{
+            transform: translateX(0px); 
+            opacity: 1;
+        }
+    }
+}
+
+@mixin fromRight($ss: 4s){
+    animation: fromRight $ss;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;  //不會再回復成  opacity: 0;
+    @include keyframes(fromRight) {
+        0%{
+            transform: translateX(100px); 
+            opacity: 0;
+        }
+        50%{
+            transform: translateX(-30px); 
+        }
+        100%{
+            transform: translateX(0px); 
+            opacity: 1;
+        }
+    }
+}
+
+@mixin fromBottom($ss: 4s){
+    animation: fromBottom $ss;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;  //不會再回復成  opacity: 0;
+    animation-iteration-count: infinite;
+    @include keyframes(fromBottom) {
+        0%{
+            transform: translateY(-10px); 
+            
+        }
+        50%{
+            transform: translateY(10px); 
+        }
+        100%{
+            transform: translateY(-10px); 
+            
+        }
+    }
+}
+
+

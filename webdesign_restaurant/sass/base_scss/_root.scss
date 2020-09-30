@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+
+$light:  #c9c1ac; 
+$red:    #d3325f;
+$lightBlack: #242424;
+
+
+
+.text-Noto {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700;
+  }
+.primary-color{
+  color: $red;
+}
+.main-btn{
+  color: $red;
+  font-size: 2rem;
+  border: 2px solid $red;
+  text-decoration: none;
+  transition: all 1s ease-in-out;
+}
+.main-btn:hover{
+  color: $lightBlack;
+  border: 2px solid $light;
+  background: $light;
+  text-decoration: none;
+
+}
