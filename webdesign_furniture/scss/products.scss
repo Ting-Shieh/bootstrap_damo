@@ -1,0 +1,37 @@
+@import './index';
+@import './base_scss/product_part';  /*引入product 樣式*/
+@import './base_scss/icon';
+@import './base_scss/root';
+/* Debug */
+* {
+    // border: solid 1px black;
+}
+
+/**/
+
+
+header {
+    .banner-products{
+        // @include set_banner($vh_value:100vh, $px_value:101px, $img_url: url('../../static/projects_image/furniture_img/pageBcg/bannerBcg.jpeg'));
+        min-height: 60vh; 
+        background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('../img/pageBcg/productsBcg.jpeg') center/cover fixed no-repeat;
+    }
+}
+#products{
+    .products-categories-title{
+        .products-categories-underline{
+            height: 0.2rem;
+            width: 5rem;
+            background: $mainYellow;
+        }
+    }
+    .products-categories-link{
+        color: $mainBlack;
+        text-decoration: none !important;
+    }
+    .products-categories-link:hover{
+        color: $mainGrey;
+        text-decoration: none !important;
+    }
+    
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Home</title>
+    
+    <!-- common css -->  
+    <link rel="stylesheet" href="../static/common/css/all.css">
+    <link rel="stylesheet" href="../static/common/css/bootstrap.min.css">
+    <!-- project css-->
+    <link rel="stylesheet" href="./css/index.css">
+    
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/logo.png" alt="company logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2 nav-active">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="./products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="./singleproduct.html" class="nav-link">Single Product</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="./store.html" class="nav-link">Store</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-icons d-none d-lg-flex">
+                <!-- single icon -->
+                <div class="navbar-icon mx-2">
+                    <i class="fas fa-search"></i>
+                </div>
+                <!-- single icon -->
+                <a href="./store.html" class="navbar-icon mx-2 navbar-cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-items">2</div>
+                </a>
+            </div>
+        </nav>
+        <!-- Banner part -->
+        <div class="banner d-flex align-items-center pl-3 pl-lg-5">
+            <div>
+                <h1 class="text-capitalize text-slanted mb-0">minimalist</h1>
+                <h1 class="text-uppercase font-weight-bold">interior style</h1>
+                <a href="./products.html" class="btn btn-yellow">view collection</a>
+            </div>
+        </div>
+    </header>
+    <!-- services section -->
+    <section id="services" class="services py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <!-- single service -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 ">
+                    <span class="service-icon"><i class="fas fa-parachute-box"></i></span>
+                    <h5 class="font-weight-bold text-uppercase">free shipping</h5>
+                    <p class="text-muted text-capitalize">free shipping on all order over $100.00</p>
+                </div>
+                <!-- single service -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 ">
+                    <span class="service-icon"><i class="fas fa-phone-volume"></i></span>
+                    <h5 class="font-weight-bold text-uppercase">online support 24/7</h5>
+                    <p class="text-muted text-capitalize">we will assist you with your inquiries</p>
+                </div>
+                <!-- single service -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 ">
+                    <span class="service-icon"><i class="fas fa-dollar-sign"></i></span>
+                    <h5 class="font-weight-bold text-uppercase">money back gurantee</h5>
+                    <p class="text-muted text-capitalize">free 100% refund for 30 days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- home-categories section -->
+    <section id="home-categories" class="home-categories py-5">
+        <div class="container">
+            <div class="row">
+                <!-- category title -->
+                <div class="col-10 mx-auto col-md-6 col-lg-3 align-self-center category-title">
+                    <h5 class="text-uppercase">product categories</h5>
+                    <p class="text-muted">我是產品列別介紹段落，產品列別介紹段落是我，我是產品列別介紹段落，產品列別介紹段落是我，我是產品列別介紹段落，產品列別介紹段落是我。</p>
+                    <a href="./products.html" class="text-weight-bold text-Noto categories-link">趕緊去看</a>
+                    <div class="categories-underline"></div>
+                </div>
+                <!-- main -->
+                <div class="col-10 mx-auto col-md-6 col-lg-9 my-3 category-main">
+                    <div class="row">
+                        <!-- single category -->
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="category-container">
+                                <img src="./img/cagetogoryImg/kitchen-category.jpeg" alt="category kitchen" class="img-fluid category-img">
+                                <a href="./products.html" class="category-link">
+                                    <h6 class="text-uppercase mb-0">kitchen</h6>
+                                    <p class="mb-0 text-yellow">20 items</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single category -->
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="category-container">
+                                <img src="./img/cagetogoryImg/bathroom-category.jpeg" alt="category bathroom" class="img-fluid category-img">
+                                <a href="./products.html" class="category-link">
+                                    <h6 class="text-uppercase mb-0">bathroom</h6>
+                                    <p class="mb-0 text-yellow">20 items</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single category -->
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="category-container">
+                                <img src="./img/cagetogoryImg/livingroom-category.jpeg" alt="category livingroom" class="img-fluid category-img">
+                                <a href="./products.html" class="category-link">
+                                    <h6 class="text-uppercase mb-0">living room</h6>
+                                    <p class="mb-0 text-yellow">20 items</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single category -->
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="category-container">
+                                <img src="./img/cagetogoryImg/patio-category.jpeg" alt="category patio" class="img-fluid category-img">
+                                <a href="./products.html" class="category-link">
+                                    <h6 class="text-uppercase mb-0">patio</h6>
+                                    <p class="mb-0 text-yellow">20 items</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- home-filler section -->
+    <section id="home-filler">
+        <div class="container-fluid">          
+            <div class="row align-items-end pb-5 home" >
+                <div class="col-10 mx-auto  text-white text-center" >
+                    <h4 class="text-uppercase font-weight-bold">smart furniture collection</h4>
+                    <p class="text-capitalize" >這裡是家具集介紹，家具介紹家具介紹家具介紹，這裡是家具介紹。</p>
+                    <a href="./products.html" class="text-weight-bold text-capitalize collection-link">view collection</a>
+                    <div class="collection-underline"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featured section -->
+    <section id="featured" class="featured py-5">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-10 mx-auto text-center">
+                    <h1 class="text-uppercase">featured products</h1>
+                    <p class="text-muted text-Noto">這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- single product -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4">
+                    <div class="featured-container p-5">
+                        <img src="./img/img-products/product-1.png" alt="product" class="img-fluid">
+                        <span class="featured-search-icon" data-toggle="modal" data-target="#productModel">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                    </div>
+                    <h6 class="text-capitalize text-center">special product</h6>
+                    <h6 class="text-center">
+                        <span class="text-muted mx-2 old-price">$200</span>
+                        <span>$100</span>
+                    </h6>
+                </div>
+                <!-- single product -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4">
+                    <div class="featured-container p-5">
+                        <img src="./img/img-products/product-2.png" alt="product" class="img-fluid">
+                        <span class="featured-search-icon" data-toggle="modal" data-target="#productModel">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                    </div>
+                    <h6 class="text-capitalize text-center">special product</h6>
+                    <h6 class="text-center">
+                        <span class="text-muted mx-2 old-price">$200</span>
+                        <span>$100</span>
+                    </h6>
+                </div>
+                <!-- single product -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4">
+                    <div class="featured-container p-5">
+                        <img src="./img/img-products/product-3.png" alt="product" class="img-fluid">
+                        <span class="featured-search-icon" data-toggle="modal" data-target="#productModel">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                    </div>
+                    <h6 class="text-capitalize text-center">special product</h6>
+                    <h6 class="text-center">
+                        <span class="text-muted mx-2 old-price">$200</span>
+                        <span>$100</span>
+                    </h6>
+                </div>
+                <!-- single product -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4">
+                    <div class="featured-container p-5">
+                        <img src="./img/img-products/product-4.png" alt="product" class="img-fluid">
+                        <span class="featured-search-icon" data-toggle="modal" data-target="#productModel">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                    </div>
+                    <h6 class="text-capitalize text-center">special product</h6>
+                    <h6 class="text-center">
+                        <span class="text-muted mx-2 old-price">$200</span>
+                        <span>$100</span>
+                    </h6>
+                </div>
+                <!-- single product -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4">
+                    <div class="featured-container p-5">
+                        <img src="./img/img-products/product-5.png" alt="product" class="img-fluid">
+                        <span class="featured-search-icon" data-toggle="modal" data-target="#productModel">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                    </div>
+                    <h6 class="text-capitalize text-center">special product</h6>
+                    <h6 class="text-center">
+                        <span class="text-muted mx-2 old-price">$200</span>
+                        <span>$100</span>
+                    </h6>
+                </div>
+                <!-- single product -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4">
+                    <div class="featured-container p-5">
+                        <img src="./img/img-products/product-6.png" alt="product" class="img-fluid">
+                        <span class="featured-search-icon" data-toggle="modal" data-target="#productModel">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                    </div>
+                    <h6 class="text-capitalize text-center">special product</h6>
+                    <h6 class="text-center">
+                        <span class="text-muted mx-2 old-price">$200</span>
+                        <span>$100</span>
+                    </h6>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- partners section -->
+    <section id="partners" class="partners py-5">
+        <div class="container">
+            <div class="row">
+                <!-- company carousel  -->
+                <div class="col-6 col-md-6 col-lg-4 mx-auto">
+                    <div id="partnerCarousel" class="carousel slide" data-ride='carousel'>
+                        <div class="carousel-inner">
+                            <!-- single item -->
+                            <div class="carousel-item active">
+                                <img src="./img/company-logos/company-logo-1.png" alt="partner company" class="d-block w-100 ">
+                            </div>
+                            <!-- single item -->
+                            <div class="carousel-item ">
+                                <img src="./img/company-logos/company-logo-2.png" alt="partner company" class="d-block w-100 ">
+                            </div>
+                            <!-- single item -->
+                            <div class="carousel-item ">
+                                <img src="./img/company-logos/company-logo-3.png" alt="partner company" class="d-block w-100 ">
+                            </div>
+                            <!-- single item -->
+                            <div class="carousel-item ">
+                                <img src="./img/company-logos/company-logo-4.png" alt="partner company" class="d-block w-100 ">
+                            </div>
+                            <!-- single item -->
+                            <div class="carousel-item ">
+                                <img src="./img/company-logos/company-logo-5.png" alt="partner company" class="d-block w-100 ">
+                            </div>
+                            <!-- single item -->
+                            <div class="carousel-item ">
+                                <img src="./img/company-logos/company-logo-6.png" alt="partner company" class="d-block w-100 ">
+                            </div>
+                        </div>
+                        <a href="#partnerCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <a href="#partnerCarousel" class="carousel-control-next" role="button" data-slide="next">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter section -->
+    <section id="newsletter" class="newsletter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto text-center">
+                    <h2 class="text-uppercase">newsletter</h2>
+                    <p class="text-Noto">這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。</p>
+                    <form class="">
+                        <div class="input-group mt-5 mb-4">
+                            <input type="text" class="form-control text-capitalize" placeholder="Enter Your Email...">
+                            <div class="input-group-append">
+                                <span class="input-group-text form-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <button type="submit" class="btn btn-yellow text-capitalize">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section -->
+    <section id="skills" class="skills py-5">
+        <div class="container">
+            <div class="row">
+                <!-- single skill -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 d-flex">
+                    <div class="skill-icon mr-3">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3 class="text-uppercase text-white">free shipping</h3>
+                        <p class="text-muted text-capitalize">這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。</p>
+                    </div>
+                </div>
+                <!-- single skill -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 d-flex">
+                    <div class="skill-icon mr-3">
+                        <i class="fas fa-comment-dollar"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3 class="text-uppercase text-white">price promise</h3>
+                        <p class="text-muted text-capitalize">這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。</p>
+                    </div>
+                </div>
+                <!-- single skill -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 d-flex">
+                    <div class="skill-icon mr-3">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3 class="text-uppercase text-white">lifetime warranty</h3>
+                        <p class="text-muted text-capitalize">這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto text-center">
+                    <h1 class="text-uppercase text-yellow font-weight-bold footer-title text-center d-inline-block">comfy sloth</h1>
+                    <div class="footer-icons my-5 d-flex justify-content-center">
+                        <!-- single icon -->
+                        <span class="footer-icon mx-2">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                        <!-- single icon -->
+                        <span class="footer-icon mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <!-- single icon -->
+                        <span class="footer-icon mx-2">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <!-- single icon -->
+                        <span class="footer-icon mx-2">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        <!-- single icon -->
+                        <span class="footer-icon mx-2">
+                            <i class="fab fa-google-plus"></i>
+                        </span>
+                    </div>
+                    <p class="text-Noto text-muted text-capitalize w-75 mx-auto text-left">
+                        這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。這裡是段落，這裡是段落，這裡是段落。
+                    </p>
+                   
+                    <div class="footer-contact mt-5 d-flex justify-content-around flex-wrap">
+                        <!-- single contact -->
+                        <div class="text-white text-Noto">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-map"></i>
+                            </span>
+                            這裡是店家地址~~
+                        </div>
+                        <!-- single contact -->
+                        <div class="text-white text-Noto">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                           +886-900-000-123
+                        </div>
+                        <!-- single contact -->
+                        <div class="text-white text-Noto">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            email@email.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- model -->
+    <div class="modal  fade" id="productModel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize">商品資訊</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                            <!-- ratings -->
+                            <div class="ratings">
+                                <span class="rating-icon"><i class="fas fa-star"></i></span>
+                                <span class="rating-icon"><i class="fas fa-star"></i></span>
+                                <span class="rating-icon"><i class="fas fa-star"></i></span>
+                                <span class="rating-icon"><i class="fas fa-star"></i></span>
+                                <span class="rating-icon"><i class="far fa-star"></i></span>
+                                <span class="text-capitalize">(25 customer reviews)</span>
+                            </div>
+                            <h2 class="my-2 text-uppercase">premium office armchair</h2>
+                            <h2>$10.00 - $200.00</h2>
+                            <p class="lead text-muted">產品介紹產品介紹產品介紹產品介紹產品介紹，產品介紹產品介紹產品介紹產品介紹，產品介紹產品介紹產品。產品介紹，產品介紹產品介紹產品介紹產品介紹，產品介紹產品介紹產品。</p>
+                            <!-- colors -->
+                            <h5 class="text-uppercase">
+                                colors :
+                                <span class="products-color products-color-black mr-2 d-inline-block"></span>
+                                <span class="products-color products-color-red mr-2 d-inline-block"></span>
+                                <span class="products-color products-color-green mr-2 d-inline-block"></span>
+                            </h5>
+                            <!-- size -->
+                            <h5 class="text-uppercase">
+                                sizes :
+                                <span class="mx-2">xs</span>
+                                <span class="mx-2">s</span>
+                                <span class="mx-2">m</span>
+                                <span class="mx-2">l</span>
+                                <span class="mx-2">xl</span>
+                            </h5>
+                            <div class="d-flex flex-wrap">
+                                <!-- cart buttons -->
+                                <div class="d-flex my-2">
+                                    <span class="btn btn-black mx-1">-</span>
+                                    <span class="btn btn-black mx-1">3</span>
+                                    <span class="btn btn-black mx-1">+</span>
+                                </div>
+                                <button class="btn btn-black my-2 mx-2">wishlist</button>
+                                <button class="btn btn-yellow my-2 mx-2">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">close modal</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <!-- common js -->
+    <script src="../static/common/js/all.js"></script>
+    <script src="../static/common/js/jquery-3.5.1.min.js"></script>
+    <script src="../static/common/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

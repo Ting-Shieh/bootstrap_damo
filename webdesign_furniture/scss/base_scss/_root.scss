@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Mali');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap');
+
+$mainYellow: #fdbe02;
+$mainWhite: #fff;
+$mainBlack: #071013;
+$mainGrey: #9b9999;
+$TransGrey: rgba(0, 0, 0, 0.1);
+
+@mixin setbtn($bg,$text_trans,$f_s,$c,$border_r) {
+    background: $bg;
+    text-transform: $text_trans;
+    font-size: $f_s;
+    color: $c;
+    border-radius: $border_r !important;
+}
+
+.text-slanted {
+    font-family: "Calligraffitti", cursive;
+}
+.text-Noto {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+.text-yellow {
+    color: $mainYellow ;
+}
+.btn-yellow {
+    @include setbtn($mainYellow !important, capitalize, 1.2rem, $mainBlack, 0)
+    // background: $mainYellow !important;
+    // text-transform: capitalize;
+    // font-size: 1.2rem;
+    // color: $mainBlack;
+    // border-radius: 0 !important;
+}
+.btn-yellow:hover{
+    background: $mainBlack !important;
+    color: $mainYellow !important;
+}
+
+.btn-black {
+    @include setbtn(transparent, capitalize, 1.2rem, $mainBlack, 0);
+    border: 0.1rem solid $mainBlack;
+}
+.btn-black:hover{
+    background: $mainBlack ;
+    color: $mainWhite ;
+}

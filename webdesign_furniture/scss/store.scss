@@ -1,0 +1,16 @@
+@import 'index';
+@import './base_scss/product_part';
+@import './base_scss/root';
+
+
+/* Debug */
+* {
+    // border: solid 1px black;
+}
+
+header {
+    .banner-store{
+        min-height: 60vh; 
+        background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('../img/pageBcg/storeBcg.jpeg') center/cover fixed no-repeat;
+    }
+}

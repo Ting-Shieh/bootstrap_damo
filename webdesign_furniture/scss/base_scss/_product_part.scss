@@ -1,0 +1,81 @@
+@import 'root';
+
+
+@mixin colorbox ($w:1rem, $h:1rem){
+    width: $w;
+    height: $h;
+    
+}
+
+@mixin colorboxbg ($c){
+    background: $c;  
+}
+
+.featured-container{
+    position: relative;
+    background: $TransGrey;
+    cursor: pointer;
+    overflow: hidden; //範圍外物件不顯示
+    .featured-search-icon {
+        position: absolute;
+        background: $mainWhite;
+        display: inline-block;
+        padding: 0.2rem 0.4rem;
+        top: 50%;
+        right: 0;
+        font-size: 1.2rem;
+        transform: translateX(110%);
+        transition: all 1s ease-in-out;
+        
+    }
+    .featured-store-link {          
+        color: $mainBlack;   
+        position: absolute;
+        background: $mainYellow;
+        padding: 0.2rem 0.4rem;
+        top: 65%;
+        right: 0;
+        transform: translateX(110%);
+        transition: all 1s ease-in-out;
+    }
+    .featured-store-link:hover {
+        color: $mainBlack;
+    }
+}
+.featured-container:hover {
+    .featured-search-icon {
+        transform: translateX(0%);
+    }
+    .featured-store-link {
+        transform: translateX(0%);
+    }
+}
+.old-price {
+    text-decoration: line-through;
+}
+
+.products-color{
+    @include colorbox(1rem, 1rem)
+}
+
+.products-color-black{
+    @include colorboxbg(#000);
+}
+.products-color-red{
+    @include colorboxbg(red);
+}
+.products-color-yellow{
+    @include colorboxbg(yellow);
+}
+.products-color-green{
+    @include colorboxbg(green);
+}
+.products-color-blue{
+    @include colorboxbg(blue);
+}
+
+.ratings{
+    .rating-icon{
+        color: $mainYellow;
+    }
+}

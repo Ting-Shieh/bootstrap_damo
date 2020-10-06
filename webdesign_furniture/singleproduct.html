@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>  
+
+    <!-- common css -->  
+    <link rel="stylesheet" href="../static/common/css/all.css">
+    <link rel="stylesheet" href="../static/common/css/bootstrap.min.css">
+    <!-- project css-->
+    <link rel="stylesheet" href="./css/singleproduct.css">
+    <!-- common js -->
+    <script src="../static/common/js/all.js"></script>
+    <script src="../static/common/js/jquery-3.5.1.min.js"></script>
+    <script src="../static/common/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/logo.png" alt="company logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2 ">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="./products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item mx-2 nav-active">
+                        <a href="./singleproduct.html" class="nav-link">Single Product</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="./store.html" class="nav-link">Store</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-icons d-none d-lg-flex">
+                <!-- single icon -->
+                <div class="navbar-icon mx-2">
+                    <i class="fas fa-search"></i>
+                </div>
+                <!-- single icon -->
+                <a href="./store.html" class="navbar-icon mx-2 navbar-cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-items">2</div>
+                </a>
+            </div>
+        </nav>
+        <!-- Banner-products part -->
+        <div class="banner-single-product d-flex align-items-center justify-content-center pl-3 pl-lg-5 text-center">
+            <div class="">
+                <h1 class="text-capitalize text-yellow text-slanted display-4">comfy sloth</h1>
+                <h1 class="text-Noto font-weight-bold display-4">單一產品</h1>
+            </div>
+            
+        </div>
+    </header>
+    <!-- single product -->
+    <section id="single-product" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- photo group -->
+                <div class="col-10 mx-auto col-lg-4 text-center my-5">
+                    <div class="single-product-img-container">
+                        <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        
+                    </div>
+                    <div class="row single-product-photos mt-3">
+                        <!-- single photo -->
+                        <div class="col-2 col-sm-2 single-product-photo p-1">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        </div>
+                        <!-- single photo -->
+                        <div class="col-2 col-sm-2 single-product-photo p-1">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        </div>
+                        <!-- single photo -->
+                        <div class="col-2 col-sm-2 single-product-photo p-1">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        </div>
+                        <!-- single photo -->
+                        <div class="col-2 col-sm-2 single-product-photo p-1">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        </div>
+                        <!-- single photo -->
+                        <div class="col-2 col-sm-2 single-product-photo p-1">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        </div>
+                        <!-- single photo -->
+                        <div class="col-2 col-sm-2 single-product-photo p-1">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- info -->
+                <div class="col-10 mx-auto col-lg-8 single-product-info my-5 px-lg-5">
+                    <!-- ratings -->
+                    <div class="ratings">
+                        <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        <span class="rating-icon"><i class="far fa-star"></i></span>
+                        <span class="text-capitalize">(25 customer reviews)</span>
+                    </div>
+                    <h2 class="my-2 text-uppercase">premium office armchair</h2>
+                    <h2>$10.00 - $200.00</h2>
+                    <p class="lead text-muted">產品介紹產品介紹產品介紹產品介紹產品介紹，產品介紹產品介紹產品介紹產品介紹，產品介紹產品介紹產品。產品介紹，產品介紹產品介紹產品介紹產品介紹，產品介紹產品介紹產品。</p>
+                    <!-- colors -->
+                    <h5 class="text-uppercase">
+                        colors :
+                        <span class="products-color products-color-black mr-2 d-inline-block"></span>
+                        <span class="products-color products-color-red mr-2 d-inline-block"></span>
+                        <span class="products-color products-color-green mr-2 d-inline-block"></span>
+                    </h5>
+                    <!-- size -->
+                    <h5 class="text-uppercase">
+                        sizes :
+                        <span class="mx-2">xs</span>
+                        <span class="mx-2">s</span>
+                        <span class="mx-2">m</span>
+                        <span class="mx-2">l</span>
+                        <span class="mx-2">xl</span>
+                    </h5>
+                    <div class="d-flex flex-wrap">
+                        <!-- cart buttons -->
+                        <div class="d-flex my-2">
+                            <span class="btn btn-black mx-1">-</span>
+                            <span class="btn btn-black mx-1">3</span>
+                            <span class="btn btn-black mx-1">+</span>
+                        </div>
+                        <button class="btn btn-black my-2 mx-2">wishlist</button>
+                        <button class="btn btn-yellow my-2 mx-2">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product info -->
+    <section id="product-info">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron">
+                        <!-- product info links -->
+                        <div class="d-flex justify-content-around flex-wrap my-3">
+                            <a href="#" class="product-info-link">
+                                <h4 class="text-capitalize">description</h4>
+                            </a>
+                            <a href="#" class="product-info-link">
+                                <h4 class="text-capitalize">additional information</h4>
+                            </a>
+                            <a href="#" class="product-info-link">
+                                <h4 class="text-capitalize">reviews (25)</h4>
+                            </a>
+                        </div>
+                        <!-- 評論區 -->
+                        <p class="lead">
+                            這裡是各用戶對於商品評論的評論區，JK Rowling has once again come under fire from transgender rights activists, this time for her new crime novel, which features a cross-dressing serial killer.，這裡是各用戶對於商品評論的評論區。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

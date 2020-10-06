@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    
+    <!-- common css -->  
+    <link rel="stylesheet" href="../static/common/css/all.css">
+    <link rel="stylesheet" href="../static/common/css/bootstrap.min.css">
+    
+    <!-- project css-->
+    <link rel="stylesheet" href="./css/products.css">
+    
+    <!-- common js -->
+    <script src="../static/common/js/all.js"></script>
+    <script src="../static/common/js/jquery-3.5.1.min.js"></script>
+    <script src="../static/common/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/logo.png" alt="company logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2 ">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-2 nav-active">
+                        <a href="./products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="./singleproduct.html" class="nav-link">Single Product</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="./store.html" class="nav-link">Store</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-icons d-none d-lg-flex">
+                <!-- single icon -->
+                <div class="navbar-icon mx-2">
+                    <i class="fas fa-search"></i>
+                </div>
+                <!-- single icon -->
+                <a href="./store.html" class="navbar-icon mx-2 navbar-cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-items">2</div>
+                </a>
+            </div>
+        </nav>
+        <!-- Banner-products part -->
+        <div class="banner-products d-flex align-items-center justify-content-center pl-3 pl-lg-5 text-center">
+            <div class="">
+                <h1 class="text-capitalize text-yellow text-slanted display-4">comfy sloth</h1>
+                <h1 class="text-Noto font-weight-bold display-4">我們的產品</h1>
+            </div>       
+        </div>
+    </header>
+    <!-- products section -->
+    <section id="products" class="products">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- product info -->
+                <div class="col-10 col-md-5 col-lg-3 mx-auto my-3 px-5 text-capitalize">
+                    <!-- categories title -->
+                    <div class="products-categories-title my-4">
+                        <h6 class="text-uppercase">shop by categories</h6>
+                        <div class="products-categories-underline"></div>
+                    </div>
+                    <!-- single link -->
+                    <a href="#" class="products-categories-link d-block">
+                        <p class="mb-0">kitchen</p>
+                    </a>
+                    <!-- single link -->
+                    <a href="#" class="products-categories-link d-block">
+                        <p class="mb-0">bathroom</p>
+                    </a>
+                    <!-- single link -->
+                    <a href="#" class="products-categories-link d-block">
+                        <p class="mb-0">living room</p>
+                    </a>
+                    <!-- single link -->
+                    <a href="#" class="products-categories-link d-block">
+                        <p class="mb-0">bedroom</p>
+                    </a>
+                    <!-- categories title form -->
+                    <div class="products-categories-title my-4">
+                        <h6 class="text-uppercase">shop by price</h6>
+                        <div class="products-categories-underline"></div>
+                    </div>
+                    <!-- form -->
+                    <form class="">
+                        <div class="form-group">
+                            <label for="price-range" >range : $0 - $1000</label>
+                            <input type="range" name="price-range" id="price-range" class="form-control-range">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend ">
+                                <span class="input-group-text form-icon ">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control text-capitalize" placeholder="search by name">
+                        </div>
+                    </form>
+                    
+                    <!-- categories title -->
+                    <div class="products-categories-title my-4">
+                        <h6 class="text-uppercase">shop by color</h6>
+                        <div class="products-categories-underline"></div>
+                    </div>
+                    <!-- single color -->
+                    <a href="" >
+                        <p class="text-capitalize mb-0">
+                            <span class="products-color products-color-black mr-2 d-inline-block"></span>black (5)
+                        </p>
+                    </a>
+                    <!-- single color -->
+                    <a href="" >
+                        <p class="text-capitalize mb-0">
+                            <span class="products-color products-color-red mr-2 d-inline-block"></span>red (5)
+                        </p>
+                    </a>
+                    <!-- single color -->
+                    <a href="" >
+                        <p class="text-capitalize mb-0">
+                            <span class="products-color products-color-yellow mr-2 d-inline-block"></span>yellow (5)
+                        </p>
+                    </a>
+                    <!-- single color -->
+                    <a href="" >
+                        <p class="text-capitalize mb-0">
+                            <span class="products-color products-color-green mr-2 d-inline-block"></span>green (5)
+                        </p>
+                    </a>
+                    <!-- single color -->
+                    <a href="" >
+                        <p class="text-capitalize mb-0">
+                            <span class="products-color products-color-blue mr-2 d-inline-block"></span>blue (5)
+                        </p>
+                    </a>
+                </div>
+                <!-- product img -->
+                <div class="col-10 col-md-7 col-lg-9 mx-auto my-3">
+                    <div class="row">
+                        <!-- single product -->
+                        <div class="mx-auto col-md-6 col-lg-4">
+                            <div class="featured-container p-5">
+                                <img src="./img/img-products/product-7.png" alt="product" class="img-fluid">
+                                <span class="featured-search-icon" data-toggle="model" data-target="#productModel">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                            </div>
+                            <h6 class="text-capitalize text-center">special product</h6>
+                            <h6 class="text-center">
+                                <span class="text-muted mx-2 old-price">$200</span>
+                                <span>$100</span>
+                            </h6>
+                        </div>
+                        <!-- single product -->
+                        <div class="mx-auto col-md-6 col-lg-4">
+                            <div class="featured-container p-5">
+                                <img src="./img/img-products/product-8.png" alt="product" class="img-fluid">
+                                <span class="featured-search-icon" data-toggle="model" data-target="#productModel">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                            </div>
+                            <h6 class="text-capitalize text-center">special product</h6>
+                            <h6 class="text-center">
+                                <span class="text-muted mx-2 old-price">$200</span>
+                                <span>$100</span>
+                            </h6>
+                        </div>
+                        <!-- single product -->
+                        <div class="mx-auto col-md-6 col-lg-4">
+                            <div class="featured-container p-5">
+                                <img src="./img/img-products/product-9.png" alt="product" class="img-fluid">
+                                <span class="featured-search-icon" data-toggle="model" data-target="#productModel">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                            </div>
+                            <h6 class="text-capitalize text-center">special product</h6>
+                            <h6 class="text-center">
+                                <span class="text-muted mx-2 old-price">$200</span>
+                                <span>$100</span>
+                            </h6>
+                        </div>
+                        <!-- single product -->
+                        <div class="mx-auto col-md-6 col-lg-4">
+                            <div class="featured-container p-5">
+                                <img src="./img/img-products/product-10.png" alt="product" class="img-fluid">
+                                <span class="featured-search-icon" data-toggle="model" data-target="#productModel">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                            </div>
+                            <h6 class="text-capitalize text-center">special product</h6>
+                            <h6 class="text-center">
+                                <span class="text-muted mx-2 old-price">$200</span>
+                                <span>$100</span>
+                            </h6>
+                        </div>
+                        <!-- single product -->
+                        <div class="mx-auto col-md-6 col-lg-4">
+                            <div class="featured-container p-5">
+                                <img src="./img/img-products/product-11.png" alt="product" class="img-fluid">
+                                <span class="featured-search-icon" data-toggle="model" data-target="#productModel">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                            </div>
+                            <h6 class="text-capitalize text-center">special product</h6>
+                            <h6 class="text-center">
+                                <span class="text-muted mx-2 old-price">$200</span>
+                                <span>$100</span>
+                            </h6>
+                        </div>
+                        <!-- single product -->
+                        <div class="mx-auto col-md-6 col-lg-4">
+                            <div class="featured-container p-5">
+                                <img src="./img/img-products/product-12.png" alt="product" class="img-fluid">
+                                <span class="featured-search-icon" data-toggle="model" data-target="#productModel">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+                            </div>
+                            <h6 class="text-capitalize text-center">special product</h6>
+                            <h6 class="text-center">
+                                <span class="text-muted mx-2 old-price">$200</span>
+                                <span>$100</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@import 'index';
+@import './base_scss/product_part';
+@import './base_scss/root';
+/* Debug */
+* {
+    // border: solid 1px black;
+}
+
+header {
+    .banner-single-product{
+        min-height: 60vh; 
+        background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('../img/pageBcg/singleBcg.jpeg') center/cover fixed no-repeat;
+    }
+}
+
+/* single-product */
+#single-product{
+    .single-product-img-container{
+
+    }
+    .single-product-photos{
+        .single-product-photo{
+            background: $TransGrey;
+            opacity: 0.5;
+            transition: all 0.3 linear;
+            cursor: pointer;
+            border: 0.1rem solid transparent;
+            box-sizing: border-box;
+        }
+        .single-product-photo:hover{
+            border-color: $mainYellow;
+            opacity: 1;
+        }
+        
+    }
+    .single-product-info{
+        
+    }
+}
+
+/* product-info */
+#product-info{
+    .product-info-link{
+        color: $mainGrey;
+        text-decoration: none;
+    }
+    .product-info-link:hover{
+        color: $mainYellow;
+    }
+}
