@@ -468,7 +468,63 @@ header{
 }
 
 /*team*/
+#team{
+    .member-container{
+        position: relative;
+        background: $mainGreen;
+        overflow: hidden;
+        .team-image{
+            transition: all 2s ease-in-out;
+        }
+        .member-info{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            background: $mainGreen;
+            color: $lightDark;
+            margin-bottom: -140px;
+            width: 100%;
+            transition: all 2s ease-in-out;
+            backface-visibility: hidden;
+            .member-text{
+                .team-icons{
+                    a{
+                        color: $mainWhite;
+                        font-size: 1.5rem;
+                        transition: color 1.5s ease;
+                    }
+                    a:hover{
+                        color: $lightDark;
+                    }
+                }
 
+
+            }
+            .member-icon{
+                a{
+                    font-size: 4rem;
+                    color: $mainWhite;
+                    transition: all 2s ease;
+            
+                }
+                a:hover{
+                    text-decoration: none;
+                    color: $lightDark;
+                }
+            }
+        }
+    }
+    .member-container:hover{
+        .team-image{
+            transform: translateY(-72px);
+            opacity: 0.5;
+        }
+        .member-info{
+            margin-bottom: 0;
+        }
+    }
+}
 /*number*/
 #numbers{
     .number{
@@ -517,7 +573,7 @@ header{
                 color: #2a9134;
             }
         }
-       
+
     }
     .card:hover{
         background: rgba(0, 0, 0, 0.8);

@@ -1,8 +1,34 @@
 $(document).ready(function(){
     // 
     $(".navbar-toggler").click(function(){
-        $(".navbar-toggler").addClass("change");
+        $(".navbar-toggler").toggleClass("change");
     });
+    //window scroll
+    $(window).scroll(function(){
+        let position = $(this).scrollTop();
+        // 56+93=149
+        if(position >= 149){
+            $('.navbar').addClass('navbar-background');
+            $(".navbar").addClass("fixed-top");
+        }
+        else{
+            $('.navbar').removeClass('navbar-background');
+            $(".navbar").removeClass("fixed-top");
+        }
+    });
+    //smooth scroll
+    $(".nav-item a").click(function(link){
+        link.preventDefault();
+
+        let target = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop:$(target).offset().top-150
+        }, 3000);
+        $(".navbar-toggler").toggleClass("change");
+        $("#myNavbar").collapse("hide");
+    });
+
+
 
     // Isotope
     let $grid = $(".grid").isotope({
