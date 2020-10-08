@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f3f5; }
+
+/*============== navbar ===============*/
+.navbar {
+  border-top: 6px solid #F15025;
+  background-color: #242a33;
+  padding: 0;
+  margin: 0; }
+  .navbar .navbar-brand {
+    background-color: #F15025;
+    padding: 15px 40px;
+    font-style: italic;
+    color: #f5f3f5;
+    display: block; }
+  .navbar .nav-link {
+    color: #F15025;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 0 10px; }
+  .navbar .nav-link:hover {
+    color: #f5f3f5;
+    background-color: #F15025; }
+
+/*============== banner ===============*/
+#banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/background-banner.jpg") center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/background-banner.jpg") center/cover fixed no-repeat; }
+  #banner .banner-title {
+    font-style: italic; }
+  #banner .banner-link {
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 0;
+    color: #F15025;
+    border: 2px solid #F15025;
+    padding: 15px 25px;
+    text-decoration: none; }
+  #banner .banner-link:hover {
+    border: 2px solid #f5f3f5;
+    background-color: #f5f3f5; }
+  #banner .viewport-80 {
+    min-height: 80vh; }
+
+#banner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #242a33;
+  z-index: -1;
+  bottom: 0;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg); }
