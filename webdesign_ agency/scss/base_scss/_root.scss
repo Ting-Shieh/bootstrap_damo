@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.Noto-text-100-style{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 100;
+}
+.Noto-text-400-style{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+.Noto-text-700-style{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+}
+
+.title{
+    .title-icon{
+        font-size: 60px;
+        color: #f15025;
+
+    }
+    .title-text{
+        padding-left: 15px;
+        border-left: 3px solid #ced0ce;
+    }
+}
