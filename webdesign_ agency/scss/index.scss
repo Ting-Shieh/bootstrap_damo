@@ -169,6 +169,55 @@ body {
   }
 }
 
-/*============== work section ===============*/
+/*============== about-us section ===============*/
+#about-us{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/background-filler-2.jpg")center/cover fixed no-repeat;
+  position: relative;
+  clip-path: polygon(0 0,100% 5%, 100% 100%, 0% 95%);
+  a{
+    text-decoration: none;
+    color: #ced0ce;
+  }
+  .card-header{
+    background-color: #f15025;
+  }
+}
+/*============== current-projects section ===============*/
+#current-projects{
+  .img-container{
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    .img-icons{
+      position: absolute;
+      bottom: -10em;
+      padding: 40px 0;
+      width: 100%;
+      background: linear-gradient(rgba(206,208,206,0.7),rgba(206,208,206,0.7));
+      transition: bottom 1.8s;
+      .img-icon{
+        color: #f15025;
+        font-size: 40px;
+        margin: 0px 10px;
+      }
+      .img-icon:hover{
+        color: #242a33;
+      }
+    }
+    
+  }
+  .img-container:hover{
+    img{
+      opacity: 0.5;
+    }
+    .img-icons{
+      bottom: 0;
+    }
+  }
+}
+/*============== numbers section ===============*/
+#numbers{
 
-/*============== work section ===============*/
+}
+
+/*==============  section ===============*/
