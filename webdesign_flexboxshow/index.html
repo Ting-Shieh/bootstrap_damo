@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No use BootStrap</title>
+
+    <!-- common css -->  
+    <!-- <link rel="stylesheet" href="../static/common/css/all.css"> -->
+    <!-- <link rel="stylesheet" href="../static/common/css/bootstrap.min.css"> -->
+    <!-- project css-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- https://pixels.com/aboutthissite.html -->
+    <style >
+        /*
+            # display => 是否塞滿盒子，預設向下塞，flex變成橫向塞
+            # options:block(default), flex, inline-flex;
+        */
+        /*
+            # flex-direction  => 排列方向
+            # row(default) row-reverse column column-reverse
+        */
+        /*
+            if flex container isn't able to fit all our items .Users needs to start scrolling
+            (就是沒有RWD，會生出卷軸。)
+            # flex-wrap  => 解決行橫向盒子不夠塞時，子盒子會超出父盒子的問題。讓子盒子在父盒子中向下排列，即是父盒中製造row 出來
+            # nowrap(default) wrap wrap-reverse
+        */
+        /*
+            if flex container isn't able to fit all our items .Users needs to start scrolling
+            (就是沒有RWD，會生出卷軸。)
+            # justify-content  => horizontal alignment (左右向調整排列)。        
+            # flex-start(default), flex-end(全體向右靠)  , center(全體向間靠)
+            # space-between(左右相鄰平均分布),space-around(左右不相鄰平均分布，左右邊距相加=間隔), space-evenly(左右不相鄰平均分布，左右邊距=間隔) 
+        */
+        /*
+            # align-items  => vertical alignment (對整個子代群，上下向調整排列，會產生 row 間隔) 。
+            # stretch(default), flex-start, flex-end, center, baseline
+        */
+        /*
+            # align-content  => vertical alignment  (上下向調整排列，不會產生 row 間隔) 。
+            # stretch(default), flex-start, flex-end, space-around, space-between
+        */
+        /* 
+            # Main axis / Cross axis
+        */
+        /* 
+            order === all children have order:0 by default 
+        */
+        /* 
+            align-self =>對單獨子代移做垂直移動。
+        */
+        .container{
+
+            display: flex;  
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            height: 40vh;
+            /* flex-wrap: wrap;
+            align-content: space-around; */
+
+            align-items: center;
+        }
+        .box-1{
+            order: 1;
+        }
+        .box-5{
+            order: -1;
+            align-self: flex-end;
+        }
+        .container1{
+            height: 800px;
+            border: 5px solid blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- //(.box.box-${$})*5 -->
+
+
+    <!-- parent = flex-container -->
+    <div class="container">
+        <!-- children = flex-items -->
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <!-- <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div> -->
+    </div>
+    <div class="container1">
+        <!-- children = flex-items -->
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <!-- <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div> -->
+    </div>
+    <a href="./banner.html" class="">Banner</a>
+
+    <!-- common js -->
+    <!-- <script src="../static/common/js/all.js"></script>
+    <script src="../static/common/js/jquery-3.5.1.min.js"></script>
+    <script src="../static/common/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

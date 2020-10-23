@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.container {
+  border: 5px solid red; }
+
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f3f3f3; }
+
+.box-1 {
+  background-color: #518f18; }
+
+.box-2 {
+  background-color: #f0a202; }
+
+.box-3 {
+  background-color: #d98d39; }
+
+.box-4 {
+  background-color: #202c52; }
+
+.box-5 {
+  background-color: #518f18; }
+
+.generic {
+  background-color: #202c59; }
